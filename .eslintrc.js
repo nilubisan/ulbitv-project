@@ -27,14 +27,17 @@ module.exports = {
         "project": "./tsconfig.json"
     },
     "plugins": [
-        "react"
+        "react",
+        "@typescript-eslint",
+        "i18next"
     ],
     "rules": {
         "react/react-in-jsx-scope": "off",
         "react/jsx-uses-react": "off",
         "@typescript-eslint/explicit-function-return-type": "off",
         "@typescript-eslint/strict-boolean-expressions": "warn",
-        "@typescript-eslint/naming-convention": "warn"
+        "@typescript-eslint/naming-convention": "warn",
+        "i18next/no-literal-string": ["error", { markupOnly: true }]
     },
     ignorePatterns: ['.eslintrc.js']
 }
