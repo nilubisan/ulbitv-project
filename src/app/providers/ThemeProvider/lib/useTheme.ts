@@ -12,6 +12,7 @@ export function useTheme (): UseThemeResult {
 
   const toggleTheme = () => {
     const newTheme = theme === Theme.DARK ? Theme.LIGHT : Theme.DARK
+
     if (setTheme != null) {
       setTheme(newTheme)
     }

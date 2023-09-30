@@ -1,5 +1,8 @@
 {
   "compilerOptions": {
+    "types": [
+      "node"
+    ],
     "outDir": "./build",
     "noImplicitAny": true,
     "module": "esnext",
@@ -14,13 +17,12 @@
     "paths": {
       "*": ["./src/*"]
     },
-    "strictNullChecks": true
+    "strictNullChecks": true,
   },
   "ts-node": {
     "compilerOptions": {
       "module": "CommonJS"
     }
   },
-  "lib": ["ESNext"]
-
+  "lib": ["ESNext"],
 }
