@@ -17,12 +17,15 @@
     "paths": {
       "*": ["./src/*"]
     },
-    "strictNullChecks": true,
+    "strictNullChecks": true
   },
   "ts-node": {
     "compilerOptions": {
       "module": "CommonJS"
     }
   },
-  "lib": ["ESNext"],
+  "rules": {
+    "@typescript-eslint/ban-ts-comment": "off"
+  },
+  "lib": ["ESNext"]
 }

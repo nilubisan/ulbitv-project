@@ -2,7 +2,7 @@ import type { Preview } from '@storybook/react'
 import StorybookWrapper from 'app/StorybookWrapper'
 import { Theme, ThemeProvider } from 'app/providers/ThemeProvider'
 import { ThemeDecorator } from 'shared/config/storybook/ThemeDecorator/ThemeDecorator'
-import {RouterDecorator} from "shared/config/storybook/RouterDecorator/RouterDecorator";
+import { RouterDecorator } from 'shared/config/storybook/RouterDecorator/RouterDecorator'
 
 const preview: Preview = {
   parameters: {
@@ -15,16 +15,16 @@ const preview: Preview = {
     }
   },
   decorators: [
+    ThemeDecorator(Theme.LIGHT),
     StoryFn => {
       return (
-          <ThemeProvider>
-            <StorybookWrapper>
-              <StoryFn/>
-            </StorybookWrapper>
-          </ThemeProvider>
+            <ThemeProvider>
+              <StorybookWrapper>
+                <StoryFn/>
+              </StorybookWrapper>
+            </ThemeProvider>
       )
     },
-    ThemeDecorator(Theme.LIGHT),
     RouterDecorator
   ]
 }
