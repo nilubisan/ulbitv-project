@@ -1,10 +1,10 @@
-import {classNames} from 'shared/lib/classNames/classNames'
+import { classNames } from 'shared/lib/classNames/classNames'
 import styles from './Sidebar.module.scss'
-import {useState} from 'react'
-import {ThemeSwitcher} from 'widgets/ThemeSwitcher'
-import {LangSwitcher} from 'widgets/LangSwitcher'
-import {useTranslation} from 'react-i18next'
-import {Button, ThemeButton} from "shared/ui/Button/Button";
+import { useState } from 'react'
+import { ThemeSwitcher } from 'widgets/ThemeSwitcher'
+import { LangSwitcher } from 'widgets/LangSwitcher'
+import { useTranslation } from 'react-i18next'
+import { Button, ThemeButton } from 'shared/ui/Button/Button'
 
 interface SidebarProps {
   className?: string
