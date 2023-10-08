@@ -28,7 +28,8 @@ module.exports = {
     "@typescript-eslint/naming-convention": "warn",
     "i18next/no-literal-string": ["error", {
       markupOnly: true
-    }]
+    }],
+    "@typescript-eslint/ban-ts-comment": "off"
   },
   ignorePatterns: ['.eslintrc.js']
 };

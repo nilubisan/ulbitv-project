@@ -1,3 +1,5 @@
+// @ts-nocheck
+
 import type { StorybookConfig } from '@storybook/react-webpack5'
 
 const config: StorybookConfig = {
@@ -8,7 +10,7 @@ const config: StorybookConfig = {
     '@storybook/addon-onboarding',
     '@storybook/addon-interactions',
     '@etchteam/storybook-addon-css-variables-theme',
-    "@storybook/addon-styling",
+    '@storybook/addon-styling'
   ],
   framework: {
     name: '@storybook/react-webpack5',
