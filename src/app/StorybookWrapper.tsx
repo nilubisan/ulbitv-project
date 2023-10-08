@@ -1,7 +1,11 @@
 import { useTheme } from 'app/providers/ThemeProvider'
 import 'app/styles/index.scss'
 
-const StorybookWrapper = ({ children }) => {
+interface TProps {
+  children: JSX.Element
+}
+
+const StorybookWrapper = ({ children }: TProps) => {
   const { theme } = useTheme()
 
   return (

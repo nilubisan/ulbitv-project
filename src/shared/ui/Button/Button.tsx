@@ -1,7 +1,6 @@
 import { classNames } from 'shared/lib/classNames/classNames'
 import styles from './Button.module.scss'
-import {type ButtonHTMLAttributes, type FC, useContext} from 'react'
-import {ThemeContext} from "app/providers/ThemeProvider/lib/ThemeContext";
+import { type ButtonHTMLAttributes, type FC } from 'react'
 
 export enum ThemeButton {
   CLEAR = 'clear',
@@ -14,8 +13,6 @@ interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
 }
 
 export const Button: FC<ButtonProps> = ({ className, children, theme, ...otherProps }: ButtonProps) => {
-  const {theme: myTheme} = useContext(ThemeContext)
-  console.log(myTheme)
   return (
         <button className={classNames(styles.Button, {}, [className, styles[theme]])} { ...otherProps }>
             {

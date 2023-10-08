@@ -1,6 +1,4 @@
-import { type Meta, type StoryObj } from '@storybook/react'
-import { ThemeDecorator } from 'shared/config/storybook/ThemeDecorator/ThemeDecorator'
-import { Theme } from 'app/providers/ThemeProvider'
+import { type StoryObj } from '@storybook/react'
 import { AppLink, AppLinkTheme } from 'shared/ui/AppLink/AppLink'
 
 const meta = {
@@ -16,7 +14,7 @@ const meta = {
   args: {
     to: '/'
   }
-} satisfies Meta<typeof AppLink>
+}
 
 export default meta
 type Story = StoryObj<typeof meta>

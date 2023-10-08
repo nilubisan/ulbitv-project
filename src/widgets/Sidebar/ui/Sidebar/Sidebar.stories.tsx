@@ -1,4 +1,4 @@
-import { type Meta, type StoryObj } from '@storybook/react'
+import { type StoryObj } from '@storybook/react'
 import { ThemeDecorator } from 'shared/config/storybook/ThemeDecorator/ThemeDecorator'
 import { Theme } from 'app/providers/ThemeProvider'
 import { Sidebar } from 'widgets/Sidebar'
@@ -13,7 +13,7 @@ const meta = {
   argTypes: {
     backgroundColor: { control: 'color' }
   }
-} satisfies Meta<typeof Sidebar>
+}
 
 export default meta
 type Story = StoryObj<typeof meta>

@@ -1,8 +1,7 @@
-import { type Meta, type StoryObj } from '@storybook/react'
+import { type StoryObj } from '@storybook/react'
 import { ThemeDecorator } from 'shared/config/storybook/ThemeDecorator/ThemeDecorator'
 import { Theme } from 'app/providers/ThemeProvider'
-import { Navbar } from 'widgets/Navbar'
-import {PageError} from "widgets/PageError";
+import { PageError } from 'widgets/PageError'
 
 const meta = {
   title: 'widgets/PageError',
@@ -14,7 +13,7 @@ const meta = {
   argTypes: {
     backgroundColor: { control: 'color' }
   }
-} satisfies Meta<typeof PageError>
+}
 
 export default meta
 type Story = StoryObj<typeof meta>
