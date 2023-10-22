@@ -13,13 +13,20 @@ module.exports = {
     "parserOptions": {
       "sourceType": "script"
     }
-  }],
+  },
+    {
+      files: ['**/src/**/*.{test,stories}.{ts, tsx}'],
+      rules: {
+        'i18next/no-literal-string': 'off',
+        'max-len': 'off'
+      }
+    }],
   "parserOptions": {
     "ecmaVersion": "latest",
     "sourceType": "module",
     "project": "./tsconfig.json"
   },
-  "plugins": ["react", "@typescript-eslint", "i18next"],
+  "plugins": ["react", "@typescript-eslint", "i18next", "react-hooks"],
   "rules": {
     "react/react-in-jsx-scope": "off",
     "react/jsx-uses-react": "off",
@@ -29,7 +36,9 @@ module.exports = {
     "i18next/no-literal-string": ["error", {
       markupOnly: true
     }],
-    "@typescript-eslint/ban-ts-comment": "off"
+    "@typescript-eslint/ban-ts-comment": "off",
+    "react-hooks/rules-of-hooks": "error",
+    "react-hooks/exhaustive-deps": "error"
   },
-  ignorePatterns: ['.eslintrc.js']
+  ignorePatterns: ['.eslintrc.js'],
 };
