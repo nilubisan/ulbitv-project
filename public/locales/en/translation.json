@@ -4,5 +4,7 @@
   "Страница не найдена": "Page not found",
   "Произошла непредвиденная ошибка": "Unhandled error occurred",
   "Перезагрузить страницу": "Reload page",
-  "Короткий язык": "En"
+  "Короткий язык": "En",
+  "increment": "increment",
+  "decrement": "decrement"
 }
