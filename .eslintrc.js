@@ -32,7 +32,7 @@ module.exports = {
     "react/jsx-uses-react": "off",
     "@typescript-eslint/explicit-function-return-type": "off",
     "@typescript-eslint/strict-boolean-expressions": "warn",
-    "@typescript-eslint/naming-convention": "warn",
+    "@typescript-eslint/naming-convention": "off",
     "i18next/no-literal-string": ["error", {
       markupOnly: true
     }],
