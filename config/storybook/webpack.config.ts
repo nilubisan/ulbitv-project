@@ -13,11 +13,9 @@ export default ({ config }: { config: webpack.Configuration }) => {
   }
   config.resolve.modules.push(paths.src)
   config.resolve.extensions.push('.ts', '.tsx')
-  config.resolve.plugins.push(
-    new webpack.DefinePlugin({
-      __IS_DEV__: true
-    })
-  )
+  config.plugins.push(new webpack.DefinePlugin({
+    __IS_DEV__: true
+  }))
 
   config.module.rules = config.module.rules.map((rule) => {
     if (/svg/.test(rule.test)) {
