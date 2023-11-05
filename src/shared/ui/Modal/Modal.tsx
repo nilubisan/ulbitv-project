@@ -20,8 +20,7 @@ export const Modal = ({ className, children, isOpen, onClose }: ModalProps) => {
 
   const mods: Record<string, boolean> = {
     [styles.opened]: isOpen,
-    [styles.isClosing]: isClosing,
-    [styles[theme as string]]: true
+    [styles.isClosing]: isClosing
   }
 
   const closeHandler = useCallback(() => {
@@ -49,7 +48,7 @@ export const Modal = ({ className, children, isOpen, onClose }: ModalProps) => {
   const onContentClick = (e: MouseEvent) => { e.stopPropagation() }
   return (
       <Portal>
-        <div className={classNames(styles.Modal, mods, [className])}>
+        <div className={classNames(styles.Modal, mods, [className, theme])}>
             <div className={styles.overlay} onClick={closeHandler}>
                 <div className={styles.content} onClick={onContentClick}>
                     {children}
