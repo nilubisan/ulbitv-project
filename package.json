@@ -20,7 +20,8 @@
     "test:ui:json": "node scripts/generate-visual-json-report.js",
     "test:ui:html": "reg-cli --from .loki/report.json --report .loki/report.html",
     "storybook": "storybook dev -p 6006 -c ./config/storybook",
-    "storybook:build": "storybook build -c ./config/storybook"
+    "storybook:build": "storybook build -c ./config/storybook",
+    "prepare": "husky install"
   },
   "resolutions": {
     "jackspeak": "2.1.1"
@@ -81,7 +82,8 @@
     "typescript": "4.9",
     "webpack": "^5.84.1",
     "webpack-cli": "^5.1.1",
-    "webpack-dev-server": "^4.15.1"
+    "webpack-dev-server": "^4.15.1",
+    "husky": "^8.0.0"
   },
   "dependencies": {
     "@etchteam/storybook-addon-css-variables-theme": "^1.5.1",
