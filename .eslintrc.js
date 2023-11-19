@@ -39,7 +39,9 @@ module.exports = {
     "@typescript-eslint/ban-ts-comment": "off",
     "react-hooks/rules-of-hooks": "error",
     "react-hooks/exhaustive-deps": "error",
-    "@typescript-eslint/no-var-requires": "off"
+    "@typescript-eslint/no-var-requires": "off",
+    "@typescript-eslint/no-floating-promises": "off",
+    "react/display-name": "off"
   },
   ignorePatterns: ['.eslintrc.js'],
 };

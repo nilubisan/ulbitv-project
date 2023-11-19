@@ -1,6 +1,6 @@
 import type { StoryObj } from '@storybook/react'
 import 'app/styles/index.scss'
-import {Button, ButtonSize, ButtonTheme} from './Button'
+import { Button, ButtonSize, ButtonTheme } from './Button'
 import { ThemeDecorator } from 'shared/config/storybook/ThemeDecorator/ThemeDecorator'
 import { Theme } from 'app/providers/ThemeProvider'
 
@@ -107,5 +107,13 @@ export const SquareSizeXL: Story = {
     theme: ButtonTheme.BACKGROUND_INVERTED,
     square: true,
     size: ButtonSize.XL
+  }
+}
+
+export const Disabled: Story = {
+  args: {
+    children: '>',
+    theme: ButtonTheme.OUTLINE,
+    disabled: true
   }
 }
