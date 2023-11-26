@@ -41,7 +41,8 @@ module.exports = {
     "react-hooks/exhaustive-deps": "error",
     "@typescript-eslint/no-var-requires": "off",
     "@typescript-eslint/no-floating-promises": "off",
-    "react/display-name": "off"
+    "react/display-name": "off",
+    "@typescript-eslint/no-dynamic-delete": "off"
   },
   ignorePatterns: ['.eslintrc.js'],
 };
