@@ -26,7 +26,8 @@ export const Primary: Story = {
 Primary.decorators = [StoreDecorator({
   loginForm: {
     username: 'admin',
-    password: '123'
+    password: '123',
+    isLoading: false
   }
 })]
 
@@ -39,7 +40,8 @@ WithError.decorators = [StoreDecorator({
   loginForm: {
     username: 'admin',
     password: '123',
-    error: 'Error'
+    error: 'Error',
+    isLoading: false
   }
 })]
 
@@ -50,6 +52,8 @@ export const WithLoading: Story = {
 
 WithLoading.decorators = [StoreDecorator({
   loginForm: {
-    isLoading: true
+    isLoading: true,
+    username: 'username',
+    password: 'password'
   }
 })]

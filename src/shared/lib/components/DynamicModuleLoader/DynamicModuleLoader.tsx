@@ -4,9 +4,9 @@ import { type ReduxStoreWithManager } from 'app/providers/StoreProvider'
 import { type Reducer, type ThunkDispatch } from '@reduxjs/toolkit'
 import { type StateSchemaKey } from 'app/providers/StoreProvider/config/StateSchema'
 
-export type ReducersList = {
+export type ReducersList = Partial<{
   [name in StateSchemaKey]: Reducer
-}
+}>
 
 type ReducersListEntry = [ StateSchemaKey, Reducer]
 

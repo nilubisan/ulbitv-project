@@ -8,7 +8,7 @@ import { useDispatch, useSelector } from 'react-redux'
 import { memo, useCallback } from 'react'
 import { loginActions, loginReducer } from '../../model/slice/loginSlice'
 import { loginByUsername } from '../../model/services/loginByUsername/loginByUsername'
-import { type ThunkDispatch } from '@reduxjs/toolkit'
+import { type DeepPartial, type ThunkDispatch } from '@reduxjs/toolkit'
 import { Text, TextTheme } from 'shared/ui/Text/Text'
 import { getLoginUsername } from '../../model/selectors/getLoginUsername/getLoginUsername'
 import { getLoginPassword } from '../../model/selectors/getLoginPassword/getLoginPassword'
@@ -20,7 +20,7 @@ export interface LoginFormProps {
   className?: string
 }
 
-const initialReducers: ReducersList = {
+const initialReducers: DeepPartial<ReducersList> = {
   loginForm: loginReducer
 }
 
