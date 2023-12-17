@@ -2,7 +2,6 @@ import { classNames } from 'shared/lib/classNames/classNames'
 import styles from './Modal.module.scss'
 import { type MouseEvent, type ReactNode, useCallback, useEffect, useRef, useState } from 'react'
 import { Portal } from 'shared/ui/Portal/Portal'
-import { useTheme } from 'app/providers/ThemeProvider'
 
 interface ModalProps {
   className?: string
@@ -18,7 +17,6 @@ export const Modal = ({ className, children, isOpen, onClose, lazy }: ModalProps
   const [isClosing, setIsClosing] = useState(false)
   const [isMounted, setIsMounted] = useState(false)
   const timerRef = useRef<ReturnType<typeof setTimeout>>()
-  const { theme } = useTheme()
 
   const mods: Record<string, boolean> = {
     [styles.opened]: isOpen,

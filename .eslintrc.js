@@ -42,7 +42,9 @@ module.exports = {
     "@typescript-eslint/no-var-requires": "off",
     "@typescript-eslint/no-floating-promises": "off",
     "react/display-name": "off",
-    "@typescript-eslint/no-dynamic-delete": "off"
+    "@typescript-eslint/no-dynamic-delete": "off",
+    "@typescript-eslint/no-invalid-void-type": "off",
+    "@typescript-eslint/no-misused-promises": "off",
   },
   ignorePatterns: ['.eslintrc.js'],
 };

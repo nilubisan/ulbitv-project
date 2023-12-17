@@ -1,19 +1,18 @@
-import { Main } from 'pages/Profile'
+import Profile from './ProfilePage'
 import type { Meta, StoryObj } from '@storybook/react'
 import { ThemeDecorator } from 'shared/config/storybook/ThemeDecorator/ThemeDecorator'
 import { Theme } from 'app/providers/ThemeProvider'
+import {StoreDecorator} from "shared/config/storybook/StoreDecorator/StoreDecorator";
 
 const meta = {
   title: 'pages/Profile',
-  component: Main,
+  component: Profile,
   parameters: {
     layout: 'centered'
   },
   tags: ['autodocs'],
-  argTypes: {
-    backgroundColor: { control: 'color' }
-  }
-} satisfies Meta<typeof Main>
+  argTypes: {}
+} satisfies Meta<typeof Profile>
 
 export default meta
 type Story = StoryObj<typeof meta>
@@ -21,6 +20,8 @@ type Story = StoryObj<typeof meta>
 export const Light: Story = {
   args: {}
 }
+
+Light.decorators = [StoreDecorator({})]
 
 export const Dark: Story = {
   args: {}

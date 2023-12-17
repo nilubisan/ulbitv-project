@@ -12,13 +12,14 @@ const domNode = document.getElementById('root')
 const root = createRoot(domNode as Element)
 
 root.render(
-    <StoreProvider>
-        <BrowserRouter>
+    <BrowserRouter>
+        <StoreProvider>
             <ErrorBoundary>
                 <ThemeProvider>
                     <App />
                 </ThemeProvider>
             </ErrorBoundary>
-        </BrowserRouter>
-    </StoreProvider>
+        </StoreProvider>
+    </BrowserRouter>
+
 )

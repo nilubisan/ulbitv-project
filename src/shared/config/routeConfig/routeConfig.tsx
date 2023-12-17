@@ -2,16 +2,20 @@ import { type RouteProps } from 'react-router-dom'
 import Main from 'pages/Main/ui/Main'
 import { About } from 'pages/About'
 import { NotFound } from 'pages/NotFound'
+import Profile from 'pages/Profile/ui/ProfilePage'
 
 export enum AppRoutes {
   MAIN = 'main',
   ABOUT = 'about',
+  PROFILE = 'profile',
   NOT_FOUND = 'not_found'
 }
 
 export const RoutePath: Record<AppRoutes, string> = {
   [AppRoutes.MAIN]: '/',
   [AppRoutes.ABOUT]: '/about',
+  [AppRoutes.PROFILE]: '/profile',
+
   [AppRoutes.NOT_FOUND]: '*'
 }
 
@@ -23,6 +27,10 @@ export const routeConfig: Record<AppRoutes, RouteProps> = {
   [AppRoutes.ABOUT]: {
     path: RoutePath[AppRoutes.ABOUT],
     element: <About />
+  },
+  [AppRoutes.PROFILE]: {
+    path: RoutePath[AppRoutes.PROFILE],
+    element: <Profile />
   },
   [AppRoutes.NOT_FOUND]: {
     path: RoutePath[AppRoutes.NOT_FOUND],

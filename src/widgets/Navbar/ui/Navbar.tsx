@@ -1,4 +1,4 @@
-import React, { useCallback, useState } from 'react'
+import React, {memo, useCallback, useState} from 'react'
 
 import { classNames } from 'shared/lib/classNames/classNames'
 import styles from './Navbar.module.scss'
@@ -11,7 +11,7 @@ import { getUserAuthData, userActions } from '../../../entities/User'
 interface NavbarProps {
   className?: string
 }
-export const Navbar = ({ className }: NavbarProps) => {
+export const Navbar = memo(({ className }: NavbarProps) => {
   const { t } = useTranslation('navbar')
   const [isAuthModal, setIsAuthModal] = useState(false)
   const dispatch = useDispatch()
@@ -41,4 +41,4 @@ export const Navbar = ({ className }: NavbarProps) => {
             { isAuthModal && <LoginModal onClose={onModalClose} isOpen={isAuthModal} /> }
         </div>
   )
-}
+})

@@ -26,22 +26,7 @@
     flex-direction: column;
 }
 
-.item {
-    margin-top: 10px;
-    display: flex;
-    align-items: center;
-}
 
-.icon {
-    fill: var(--inverted-primary-color);
-    width: 30px;
-    height: 30px;
-}
-
-.link {
-    margin-top: 10px;
-    opacity: 1;
-}
 
 .collapseBtn {
     position: absolute;
@@ -59,11 +44,5 @@
 
     .lng {
         margin-left: 0;
-    }
-
-    .link {
-        opacity: 0;
-        transition: opacity 0.2s;
-        width: 0;
     }
 }

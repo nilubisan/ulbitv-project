@@ -87,7 +87,7 @@
   },
   "dependencies": {
     "@etchteam/storybook-addon-css-variables-theme": "^1.5.1",
-    "@reduxjs/toolkit": "^1.9.7",
+    "@reduxjs/toolkit": "1.9.7",
     "axios": "^1.6.1",
     "global": "^4.4.0",
     "i18next": "21.6.11",

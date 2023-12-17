@@ -14,7 +14,8 @@ export default ({ config }: { config: webpack.Configuration }) => {
   config.resolve.modules.push(paths.src)
   config.resolve.extensions.push('.ts', '.tsx')
   config.plugins.push(new webpack.DefinePlugin({
-    __IS_DEV__: true
+    __IS_DEV__: true,
+    __API__: JSON.stringify('')
   }))
 
   config.module.rules = config.module.rules.map((rule) => {
