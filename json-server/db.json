@@ -1,9 +1,17 @@
 {
   "posts": [
-    { "id": "1", "title": "json-server", "author": "typicode" }
+    {
+      "id": "1",
+      "title": "json-server",
+      "author": "typicode"
+    }
   ],
   "comments": [
-    { "id": "1", "body": "some comment", "postId": "1" }
+    {
+      "id": "1",
+      "body": "some comment",
+      "postId": "1"
+    }
   ],
   "users": [
     {
@@ -13,13 +21,13 @@
     }
   ],
   "profile": {
-    "firstName": "Rinat",
+    "firstName": "Rinatasdsad",
     "lastName": "Nasibullin",
     "age": 22,
-    "currency": "KZT",
-    "country": "Kazakhstan",
-    "city": "Almaty",
+    "currency": "USD",
+    "country": "KAZAKHSTAN",
+    "city": "Almatyasd",
     "username": "admin",
-    "avatar": "https://avatars.mds.yandex.net/get-yapic/27503/enc-a50c54f756a508eb5dbcd8ab3ff0332a1675f60b5d8c4bbef3b25ff44c1fb2e6/islands-retina-middle"
+    "avatar": "https://upload.wikimedia.org/wikipedia/commons/9/99/Sample_User_Icon.png"
   }
 }

@@ -1,14 +1,23 @@
-import { type Country, type Currency } from 'shared/const/common'
+import { type Country } from 'entities/Country'
+import { type Currency } from 'entities/Currency'
+
+export enum ValidateProfileError {
+  INCORRECT_USER_DATA = 'INCORRECT_USER_DATA',
+  INCORRECT_AGE = 'INCORRECT_AGE',
+  INCORRECT_COUNTRY = 'INCORRECT_COUNTRY',
+  NO_DATA = 'NO_DATA',
+  SERVER_ERROR = 'SERVER_ERROR'
+}
 
 export interface Profile {
-  'firstName': string
-  'lastName': string
-  'age': number
-  'currency': Currency
-  'country': Country
-  'city': string
-  'username': string
-  'avatar': string
+  firstName?: string
+  lastName?: string
+  age?: number
+  currency?: Currency
+  country?: Country
+  city?: string
+  username?: string
+  avatar?: string
 }
 
 export interface ProfileSchema {
@@ -16,4 +25,6 @@ export interface ProfileSchema {
   isLoading: boolean
   error?: string
   readonly: boolean
+  form?: Profile
+  validateErrors?: ValidateProfileError[]
 }
